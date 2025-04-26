@@ -11,6 +11,8 @@ window.addEventListener('message', function(event) {
 // Send a message to Salesforce when button is clicked
 document.getElementById('sendMessageButton').addEventListener('click', function() {
     if (window.parent) {
+        console.log('--MADHU PERSONAL--');
+        console.log('--window.parent--',window.parent);
         window.parent.postMessage({ 
             type: 'FROM_EXTERNAL_APP', 
             message: 'Hello Salesforce, this is External App!' 
